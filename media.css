@@ -1,0 +1,136 @@
+/* 1400px */
+
+/* 1200px - 1199.99px */
+
+/* 992px - 991.99px */
+
+/* 768px - 767.99px */
+
+/* 576px - 575.99px */
+
+
+@media (max-width:1199.99px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .nav__content-logo {
+        font-size: 32px;
+    }
+
+    .list__link {
+        font-size: 20px;
+    }
+
+    .about__me {
+        padding: 15px;
+    }
+}
+
+@media (max-width:991.99px) {
+
+
+    .about__me-content {
+        flex-direction: column;
+    }
+
+    .about__me-content img {
+        max-width: 100%;
+    }
+
+    .about__me-text {
+        margin: 0;
+    }
+
+    .projects__content {
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .project__card img {
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width:767.99px) {
+    .nav {
+        position: relative;
+    }
+
+    .nav__content-list {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        background: #000000;
+        padding: 15px;
+        left: -100%;
+        gap: 20px;
+    }
+
+    .list__link {
+        margin: 0;
+    }
+
+    .nav__menu-btn {
+        display: flex;
+    }
+
+    .nav__menu-btn:hover .nav__menu-btn-line {
+        background: transparent;
+    }
+
+    .nav__menu-btn:hover .nav__menu-btn-line::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav__menu-btn:hover .nav__menu-btn-line::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav__menu:hover .nav__content-list {
+        left: 0;
+    }
+
+    .header {
+        background-position: center;
+        min-height: 500px;
+    }
+
+    .header__content-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 32px;
+    }
+
+    .about__text-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about__text-descr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:575.99px) {
+
+    .header__content-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+
+    .header__content-btn {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+}
